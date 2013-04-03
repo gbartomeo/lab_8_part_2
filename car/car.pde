@@ -32,6 +32,8 @@ void draw() {
   x += speed;
 
   if (x>550)
-    x = -100;
+    speed = -1;
+  else if (x<-75)
+    speed = 1;
 }
 
