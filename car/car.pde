@@ -3,7 +3,7 @@ void setup() {
 
 }
 
-int x = 200;
+int x = 200, speed = 1;
 
 void draw() {
   noStroke();
@@ -29,5 +29,7 @@ void draw() {
   fill(0, 0, 0);
   ellipse(x + 20, 320, 20, 20);
   ellipse(x + 60, 320, 20, 20);
+
+x += speed;
 
 }
